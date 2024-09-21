@@ -1,0 +1,93 @@
+
+body{
+    background: url(Images/Fondo3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+}
+
+nav ul li{
+    list-style: none;
+    float:right;
+    padding: 20px;
+}
+
+nav ul li a{
+    font-size: larger;
+    text-decoration: none;
+    color:#000000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #000000; 
+    color: #ffffff; 
+    transition: background-color 0.3s ease; 
+}
+
+.bordesRedondos{
+    border-radius: 5px;
+    border:1px solid #000000;
+}
+
+.Perfil {
+    width: 150px;
+    height:150px;
+    border-radius:200px;
+    border:2px solid #000000;
+    margin-top: -100px;
+
+}
+
+#Rectangulo{
+    border-radius: 10px;
+    width: 100%;
+    height: 280px;
+    background-color:whitesmoke;
+}
+
+h2{
+    padding-left: 2%;
+    float: left;
+}
+
+h3{
+    font-size:x-large;
+}
+
+p{
+    font-size:larger;
+    margin-top: -1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
+
+.Logos{
+    margin: 10px;
+    width: 150px;
+    height:150px;
+}
+
+.Cuadrados{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    border: 5px solid #ffffff
+}
+
+a img:hover {
+    transform: scale(1.1); 
+    
+}
+
+.Iconos{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
