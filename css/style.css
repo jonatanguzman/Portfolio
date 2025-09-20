@@ -6,6 +6,10 @@ body {
     min-height: 100vh;              
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .floating-navbar {
     margin: 20px auto;      
     width: 90%;             
@@ -129,7 +133,7 @@ body {
 }
 
 .dark-mode .navbar .nav-link:hover {
-  color: #0d6efd !important; /* azul Bootstrap */
+  color: #0d6efd !important; 
 }
 
 .dark-mode .card {
@@ -154,7 +158,7 @@ body {
 }
 
 .dark-mode .input-group-text i {
-  color: #f1f1f1; /* iconos claros */
+  color: #f1f1f1; 
 }
 
 .dark-mode input,
@@ -174,7 +178,7 @@ body {
 .dark-mode textarea:focus,
 .dark-mode select:focus {
   background-color: #333;
-  border-color: #0d6efd; /* azul al focus */
+  border-color: #0d6efd; 
   color: #fff;
   box-shadow: none;
 }
