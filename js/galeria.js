@@ -64,6 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", async function (e) {
     e.preventDefault(); 
 
+    if (!form.checkValidity()) {
+    form.classList.add("was-validated");
+    return; 
+    }
+
     const data = new FormData(form);
 
     try {
