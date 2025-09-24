@@ -1,36 +1,69 @@
-body {
-    background-image: url('../img/fondo.jpg');
-    background-size: cover;         
-    background-repeat: no-repeat;   
-    background-position: center;    
-    min-height: 100vh;              
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-.floating-navbar {
-    margin: 20px auto;      
-    width: 90%;             
-    border-radius: 1rem;   
-    padding: 0.5rem 1rem;   
+body {
+  background: url('../img/fondo.jpg') center/cover no-repeat;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  color: #333;
+}
+
+a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+
+.floating-navbar,
+.footer-floating {
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.floating-navbar a,
+.quick-menu a {
+  font-size: 1rem;
+}
+
+.quick-menu {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1100;
+}
+
+.quick-menu a {
+  font-size: 1.3rem;
 }
 
 .custom-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .custom-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .custom-card.bg-transparent {
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
 }
 
 .perfil-img {
@@ -40,15 +73,15 @@ html {
 }
 
 .perfil-img:hover {
-  transform: translateY(-10px); 
-  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.7); 
+  transform: translateY(-10px);
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.7);
 }
 
 .section-divider {
   border: 0;
   height: 4px;
-  width: 80%; 
-  margin: 2rem auto; 
+  width: 80%;
+  margin: 2rem auto;
   border-radius: 10px;
   background: linear-gradient(90deg, #0d6efd, #0dcaf0);
   opacity: 0.9;
@@ -68,9 +101,13 @@ html {
 .logo-track {
   display: flex;
   gap: 40px;
-  animation: scroll 20s linear infinite;
   width: max-content;
   align-items: center;
+  animation: scroll 20s linear infinite;
+}
+
+.logo-carousel:hover .logo-track {
+  animation-play-state: paused;
 }
 
 .tech-logo {
@@ -84,16 +121,8 @@ html {
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.logo-carousel:hover .logo-track {
-  animation-play-state: paused;
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .fixed-img {
@@ -107,13 +136,8 @@ html {
   object-fit: contain;
 }
 
-.footer-floating {
-    margin: 20px auto;     
-    width: 90%;            
-    border-radius: 1rem;   
-}
-
-#icon-sun, #icon-moon {
+#icon-sun,
+#icon-moon {
   font-size: 1.2rem;
   transition: opacity 0.3s ease;
 }
@@ -123,17 +147,24 @@ html {
   color: #f1f1f1;
 }
 
-.dark-mode .navbar {
+.dark-mode .navbar,
+.dark-mode .quick-menu,
+.dark-mode footer {
   background-color: #1e1e1e !important;
-}
-
-.dark-mode .navbar .nav-link,
-.dark-mode .navbar-brand {
   color: #f1f1f1 !important;
 }
 
-.dark-mode .navbar .nav-link:hover {
-  color: #0d6efd !important; 
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar-brand,
+.dark-mode .quick-menu .quick-icon,
+.dark-mode footer a {
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .navbar .nav-link:hover,
+.dark-mode .quick-menu .quick-icon:hover,
+.dark-mode footer a:hover {
+  color: #0d6efd !important;
 }
 
 .dark-mode .card {
@@ -157,15 +188,17 @@ html {
   border: 1px solid #555;
 }
 
-.dark-mode .input-group-text i {
-  color: #f1f1f1; 
+.dark-mode .input-group-text i,
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  color: #f1f1f1;
 }
 
 .dark-mode input,
 .dark-mode textarea,
 .dark-mode select {
   background-color: #2a2a2a;
-  color: #f1f1f1;
   border: 1px solid #555;
 }
 
@@ -178,20 +211,7 @@ html {
 .dark-mode textarea:focus,
 .dark-mode select:focus {
   background-color: #333;
-  border-color: #0d6efd; 
+  border-color: #0d6efd;
   color: #fff;
   box-shadow: none;
-}
-
-.dark-mode footer {
-  background-color: #1e1e1e !important;
-  color: #f1f1f1 !important;
-}
-
-.dark-mode footer a {
-  color: #f1f1f1 !important;
-}
-
-.dark-mode footer a:hover {
-  color: #0d6efd !important;
 }
