@@ -26,9 +26,19 @@ a:hover {
   padding: 0.5rem 1rem;
 }
 
-.floating-navbar a,
+.navbar .nav-link,
+.navbar-brand,
 .quick-menu a {
-  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar .nav-link:hover,
+.navbar-brand:hover,
+.quick-menu a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
 }
 
 .quick-menu {
