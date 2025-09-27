@@ -225,3 +225,10 @@ a:hover {
   color: #fff;
   box-shadow: none;
 }
+
+#langSwitch {
+  cursor: pointer;
+}
+#langLabel {
+  font-weight: 600;
+}

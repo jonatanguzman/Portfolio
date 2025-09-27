@@ -118,3 +118,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     localStorage.setItem("dark-mode", body.classList.contains("dark-mode"));
   });
+
+  const langSwitch = document.getElementById("langSwitch");
+const langLabel = document.getElementById("langLabel");
+
+// Setear el estado inicial del switch
+langSwitch.checked = i18n.getCurrent() === "en";
+langLabel.textContent = i18n.getCurrent().toUpperCase();
+
+langSwitch.addEventListener("change", () => {
+  const lang = langSwitch.checked ? "en" : "es";
+  i18n.changeTo(lang);
+  langLabel.textContent = lang.toUpperCase();
+});
