@@ -18,6 +18,11 @@ a:hover {
   transform: scale(1.2);
 }
 
+.no-hover,
+.no-hover:hover {
+  transform: none !important;
+}
+
 .floating-navbar,
 .footer-floating {
   margin: 20px auto;
@@ -224,11 +229,4 @@ a:hover {
   border-color: #0d6efd;
   color: #fff;
   box-shadow: none;
-}
-
-#langSwitch {
-  cursor: pointer;
-}
-#langLabel {
-  font-weight: 600;
 }
