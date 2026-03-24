@@ -251,3 +251,70 @@ a:hover {
   color: #fff;
   box-shadow: none;
 }
+
+.tech-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.tech-card img {
+    max-height: 45px;
+    margin-bottom: 10px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tech-card p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tech-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.tech-card:hover img {
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .border-end {
+        border-right: 1px solid #e0e0e0 !important;
+    }
+}
+
+#conocimientos,
+#conocimientos .card,
+.tech-card {
+    transition: all 0.3s ease;
+}
+
+
+.dark-mode .tech-card {
+    background: #2a2a2a;
+    border: 1px solid #444;
+}
+
+.dark-mode .tech-card p {
+    color: #f1f1f1;
+}
+
+.dark-mode .tech-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.dark-mode .tech-card img {
+    filter: brightness(1.1) contrast(1.1);
+}
+
+/* Línea divisoria */
+.dark-mode .border-end {
+    border-right: 1px solid #444 !important;
+}
