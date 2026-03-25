@@ -66,6 +66,10 @@ a:hover {
   font-size: 1.3rem;
 }
 
+section {
+  scroll-margin-top: 120px;
+}
+
 .custom-card {
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -104,6 +108,10 @@ a:hover {
   transition: background 0.3s ease-in-out;
 }
 
+section {
+  scroll-margin-top: 120px;
+}
+
 .dark-mode .section-divider {
   background: linear-gradient(90deg, #66ccff, #004085);
 }
@@ -123,6 +131,15 @@ a:hover {
     margin-bottom: 10px;
     object-fit: contain;
     transition: transform 0.3s ease;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px; 
+    max-height: 400px;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .tech-card p {
@@ -167,9 +184,17 @@ a:hover {
   cursor: pointer;
 }
 
+.modal-content {
+    background: transparent;
+    border: none;
+}
+
 .modal-content img {
-  max-height: 80vh;
-  object-fit: contain;
+    max-width: 100%;
+    max-height: 100vh; 
+    margin: auto;
+    display: block;
+    border-radius: 10px;
 }
 
 #icon-sun,
@@ -296,7 +321,6 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-
 .dark-mode .tech-card {
     background: #2a2a2a;
     border: 1px solid #444;
@@ -314,7 +338,7 @@ a:hover {
     filter: brightness(1.1) contrast(1.1);
 }
 
-/* Línea divisoria */
 .dark-mode .border-end {
     border-right: 1px solid #444 !important;
 }
+
