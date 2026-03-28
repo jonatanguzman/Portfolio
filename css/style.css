@@ -27,7 +27,6 @@ a:hover {
   transform: none !important;
 }
 
-
 .floating-navbar,
 .footer-floating {
   margin: 20px auto;
@@ -50,7 +49,6 @@ a:hover {
   transform: scale(1.1);
 }
 
-
 .quick-menu {
   position: fixed;
   top: 50%;
@@ -66,7 +64,6 @@ a:hover {
   z-index: 1100;
 }
 
-
 .custom-card {
   transition: transform 0.3s, box-shadow 0.3s;
   border-radius: 15px;
@@ -77,7 +74,6 @@ a:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-
 .perfil-img {
   max-width: 300px;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
@@ -87,7 +83,6 @@ a:hover {
 .perfil-img:hover {
   transform: translateY(-10px);
 }
-
 
 .section-divider {
   height: 4px;
@@ -102,8 +97,14 @@ a:hover {
   border-radius: 12px;
   padding: 15px;
   border: 1px solid #eaeaea;
-  transition: all 0.3s ease;
+  display: flex;              
+  flex-direction: column;     
+  align-items: center;        
+  justify-content: center;    
+  text-align: center;         
   height: 100%;
+  transition: all 0.3s ease;
+  min-height: 110px;
 }
 
 .tech-card img {
@@ -115,7 +116,6 @@ a:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
-
 
 .project-card {
   overflow: hidden;
@@ -160,11 +160,18 @@ a:hover {
   color: #f1f1f1;
 }
 
-.dark-mode a {
-  color: #f1f1f1;
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar-brand,
+.dark-mode .quick-menu a {
+  color: #f1f1f1 !important;
 }
 
-.dark-mode a:hover {
-  color: #0d6efd;
+.dark-mode .navbar .nav-link:hover,
+.dark-mode .quick-menu a:hover {
+  color: #0d6efd !important;
 }
 
+.navbar .nav-link i,
+.quick-menu i {
+  color: inherit !important;
+}
