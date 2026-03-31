@@ -18,20 +18,30 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light shadow-sm rounded-3 floating-navbar">
         <div class="container-fluid">            
-            <a class="navbar-brand" href=""><img src="img/pestaña.ico" width="30" height="30">  Portfolio personal</a>            
+            <a class="navbar-brand" href=""><img src="img/pestaña.ico" width="30" height="30"><span class="lang-element" data-es=" Porfolio Personal" data-en=" Personal Portfolio">Porfolio Personal</span></a>
+            <li class="nav-item dropdown lang-dropdown ms-lg-3">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-globe2 me-2"></i>
+                    <span id="current-lang-label">ES</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 animated-fade-in" aria-labelledby="langDropdown">
+                    <li><a class="dropdown-item small" href="#" onclick="changeLanguage('es')">Castellano</a></li>
+                    <li><a class="dropdown-item small" href="#" onclick="changeLanguage('en')">English</a></li>
+                </ul>
+            </li>            
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                <a class="nav-link" href="#conocimientos"><i class="bi bi-mortarboard-fill me-1"></i>Conocimientos</a>
+                <a class="nav-link" href="#conocimientos"><i class="bi bi-mortarboard-fill me-1"></i><span class="lang-element" data-es="Conocimientos" data-en="Knowledge">Conocimientos</span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#proyectos"><i class="bi bi-archive-fill me-1"></i>Proyectos</a>
+                <a class="nav-link" href="#proyectos"><i class="bi bi-archive-fill me-1"></i><span class="lang-element" data-es="Proyectos" data-en="Projects">Proyectos</span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#contacto"><i class="bi bi-chat-square-text-fill me-1"></i>Contacto</a>
+                <a class="nav-link" href="#contacto"><i class="bi bi-chat-square-text-fill me-1"></i><span class="lang-element" data-es="Contacto" data-en="Contact">Contacto</span></a>
                 </li>
                 <form class="d-flex align-items-center ms-auto">
                     <i class="bi bi-moon-stars-fill text-light d-none me-2 ms-2" id="icon-moon"></i>
@@ -59,44 +69,51 @@
         <div class="container">
             <div class="card custom-card border-0 shadow-sm p-4">
             <h2 class="text-center text-primary fw-bold mb-4">
-                <i class="bi bi-person-lines-fill me-1"></i>Sobre mí
+                <i class="bi bi-person-lines-fill me-1"></i><span class="lang-element" data-es="Sobre mí" data-en="About Me">Sobre mí</span>
             </h2>
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
                 <img src="img/perfil.jpg" alt="Foto de Jonatan" class="img-fluid rounded-circle perfil-img">
                 </div>
                 <div class="col-md-8">
-                <p class="lead">
+                <p class="lead lang-element"
+                    data-es="¡Hola! Soy <strong>Jonatan Guzmán</strong>, Técnico Universitario en Programación, con enfoque en el <strong>análisis de datos</strong> y el desarrollo de soluciones tecnológicas orientadas a la optimización de procesos."
+                    data-en="Hello! I am <strong>Jonatan Guzmán</strong>, a University Technician in Programming, with a focus on <strong>data analysis</strong> and the development of technological solutions aimed at process optimization.">
                     ¡Hola! Soy <strong>Jonatan Guzmán</strong>, Técnico Universitario en Programación, con enfoque en el <strong>análisis de datos</strong> y el desarrollo de soluciones tecnológicas orientadas a la optimización de procesos.
                 </p>
-
-                <p> 
-                    Cuento con experiencia en entornos operativos y logísticos, donde utilizo herramientas como <strong>SAP y Excel</strong> para la gestión, análisis y seguimiento de información, contribuyendo a la mejora de la eficiencia y la toma de decisiones.
+                <p class="lang-element" 
+                    data-es="Cuento con experiencia en entornos operativos y logísticos, donde utilizo herramientas como <strong>SAP y Excel</strong> para la gestión, análisis y seguimiento de información."
+                    data-en="I have experience in operational and logistical environments, using tools like <strong>SAP and Excel</strong> for data management, analysis, and tracking.">
+                    Cuento con experiencia en entornos operativos y logísticos, donde utilizo herramientas como <strong>SAP y Excel</strong> para la gestión, análisis y seguimiento de información.
                 </p>
-
-                <p>
+                <p class="lang-element"
+                    data-es="Durante mi formación y proyectos prácticos, he trabajado con tecnologías como <strong>Java, C#, .NET y SQL</strong>, desarrollando aplicaciones y soluciones enfocadas en la gestión de datos y la lógica de negocio."
+                    data-en="During my training and practical projects, I have worked with technologies such as <strong>Java, C#, .NET and SQL</strong>, developing applications and solutions focused on data management and business logic.">
                     Durante mi formación y proyectos prácticos, he trabajado con tecnologías como <strong>Java, C#, .NET y SQL</strong>, desarrollando aplicaciones y soluciones enfocadas en la gestión de datos y la lógica de negocio.
                 </p>
-
-                <p>
+                <p class="lang-element"
+                    data-es="Actualmente me encuentro fortaleciendo mis conocimientos en <strong>análisis de datos y visualización con Power BI</strong>, con el objetivo de transformar datos en información útil para la toma de decisiones."
+                    data-en="I am currently strengthening my knowledge in <strong>data analysis and visualization with Power BI</strong>, with the goal of transforming data into useful information for decision-making.">
                     Actualmente me encuentro fortaleciendo mis conocimientos en <strong>análisis de datos y visualización con Power BI</strong>, con el objetivo de transformar datos en información útil para la toma de decisiones.
                 </p>
-
-                <p>
+                <p class="lang-element"
+                    data-es="Me interesa desarrollarme en roles donde pueda combinar <strong>datos, tecnología y conocimiento del negocio</strong>, aportando valor a través del análisis, la mejora continua y la implementación de soluciones eficientes."
+                    data-en="I am interested in developing in roles where I can combine <strong>data, technology and business knowledge</strong>, adding value through analysis, continuous improvement and the implementation of efficient solutions.">
                     Me interesa desarrollarme en roles donde pueda combinar <strong>datos, tecnología y conocimiento del negocio</strong>, aportando valor a través del análisis, la mejora continua y la implementación de soluciones eficientes.
                 </p>
                 <p class="mb-3">
                     📍 Mendoza, Argentina <br>
-                    💼 Abierto a oportunidades en análisis de datos, BI y desarrollo de software.
+                    💼 <span class="lang-element" data-es="Abierto a oportunidades en análisis de datos, BI y desarrollo de software." data-en="Open to opportunities in data analytics, BI, and software development.">
+                    Abierto a oportunidades en análisis de datos, BI y desarrollo de software.</span>
                 </p>
                 <div class="d-flex justify-content-center gap-2">
                     <a href="docs/CV_Guzmán_Jonatan.pdf" target="_blank"
                     class="btn btn-outline-primary shadow-sm no-hover">
-                        <i class="bi bi-eye me-2"></i> Ver CV
+                        <i class="bi bi-eye me-2"></i> <span class="lang-element" data-es="Ver CV" data-en="See CV">Ver CV</span>
                     </a>
                     <a href="docs/CV_Guzmán_Jonatan.pdf" download="CV_Guzmán_Jonatan.pdf"
                     class="btn btn-outline-primary shadow-sm no-hover">
-                        <i class="bi bi-download me-2"></i> Descargar CV
+                        <i class="bi bi-download me-2"></i> <span class="lang-element" data-es="Descargar CV" data-en="Dowload CV">Descargar CV</span>
                     </a>
                 </div>
                 </div>
@@ -112,16 +129,23 @@
             <div class="container">
                 <div class="card border-0 shadow-sm p-4">
                     <h2 class="text-center text-primary fw-bold mb-4">
-                        <i class="bi bi-mortarboard-fill me-2"></i>Conocimientos
+                        <i class="bi bi-mortarboard-fill me-2"></i><span class="lang-element" data-es="Conocimientos" data-en="Knowledge">Conocimientos</span>
                     </h2>
-                    <p class="text-center mx-auto mb-4" style="max-width: 800px;">
+                    <p class="text-center mx-auto mb-4 lang-element" style="max-width: 800px;"
+                        data-es="Perfil orientado al desarrollo de soluciones que integran análisis de datos y desarrollo de software,
+                        aplicando tecnologías backend y herramientas de gestión para optimizar procesos y mejorar la toma de decisiones."
+                        data-en="Profile focused on developing solutions that integrate data analysis and software development,
+                        applying backend technologies and management tools to optimize processes and improve decision-making.">
                         Perfil orientado al desarrollo de soluciones que integran análisis de datos y desarrollo de software,
-                         aplicando tecnologías backend y herramientas de gestión para optimizar procesos y mejorar la toma de decisiones.
+                        aplicando tecnologías backend y herramientas de gestión para optimizar procesos y mejorar la toma de decisiones.
                     </p>
                     <div class="row g-4">
                         <div class="col-md-6 pe-md-4 border-end">
                             <h5 class="fw-bold text-secondary mb-4 text-center">
-                                <i class="bi bi-graph-up me-2"></i>Data Analysis & BI
+                                <i class="bi bi-graph-up me-2"></i><span class="lang-element" 
+                                data-es="Análisis de Datos & BI" 
+                                data-en="Data Analysis & BI">
+                                Análisis de Datos & BI</span>
                             </h5>
                             <div class="row g-3 justify-content-center">                 
                                 <div class="col-6 col-sm-4">
@@ -160,7 +184,10 @@
 
                         <div class="col-md-6 ps-md-4">
                             <h5 class="fw-bold text-secondary mb-4 text-center">
-                                <i class="bi bi-code-slash me-2"></i>Backend & Web Development
+                                <i class="bi bi-code-slash me-2"></i><span class="lang-element" 
+                                data-es="Backend & Desarrollo Web" 
+                                data-en="Backend & Web Development">
+                                Backend & Desarrollo Web</span>
                             </h5>
                             <div class="row g-3 justify-content-center">
                                 <div class="col-6 col-sm-4">
@@ -234,16 +261,16 @@
             <div class="container">
 
                 <h2 class="text-center text-primary fw-bold mb-5">
-                    <i class="bi bi-archive-fill me-2"></i>Proyectos
+                    <i class="bi bi-archive-fill me-2"></i><span class="lang-element"
+                    data-es="Proyectos" data-en="Projects">
+                    Proyectos</span>
                 </h2>
 
                 <div class="card project-card mb-5 border-0 shadow-sm">
                     <div class="row g-0 align-items-center">
-
                         <div class="col-md-6">
                             <div id="carouselProyecto1" class="carousel slide h-100" data-bs-ride="carousel">
                                 <div class="carousel-inner h-100">
-
                                     <div class="carousel-item active">
                                         <img src="img/p1-inicio.png" class="d-block w-100 project-img open-gallery" data-gallery="proyecto1">
                                     </div>
@@ -253,7 +280,6 @@
                                     <div class="carousel-item">
                                         <img src="img/p1-usuario.png" class="d-block w-100 project-img open-gallery" data-gallery="proyecto1">
                                     </div>
-
                                 </div>
 
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="prev">
@@ -267,32 +293,53 @@
 
                         <div class="col-md-6">
                             <div class="card-body">
-
                                 <h4 class="fw-bold mb-2">
-                                    <i class="bi bi-bank me-2"></i>Sistema de Gestión Bancaria
+                                    <i class="bi bi-bank me-2"></i><span class="lang-element"
+                                    data-es="Sistema de Gestión Bancaria"
+                                    data-en="Banking Management System">
+                                    Sistema de Gestión Bancaria</span>                                    
                                 </h4>
-
-                                <p class="text">
+                                <p class="text lang-element"
+                                    data-es="Desarrollo de una aplicación web orientada a la gestión bancaria, permitiendo a los usuarios realizar transferencias, consultas y solicitudes, mientras que los administradores pueden gestionar cuentas, clientes y préstamos de forma centralizada."
+                                    data-en="Development of a web application oriented towards banking management, allowing users to make transfers, queries and requests, while administrators can manage accounts, clients and loans centrally.">
                                     Desarrollo de una aplicación web orientada a la gestión bancaria, permitiendo a los usuarios realizar transferencias, consultas y solicitudes, mientras que los administradores pueden gestionar cuentas, clientes y préstamos de forma centralizada.
                                 </p>
-
                                 <div class="mb-3">
                                     <span class="badge bg-primary">Java</span>
                                     <span class="badge bg-primary">JSP</span>
                                     <span class="badge bg-primary">Servlets</span>
                                     <span class="badge bg-primary">MySQL</span>
                                 </div>
-
                                 <ul class="small text">
-                                    <li>Gestión de cuentas bancarias</li>
-                                    <li>Transferencias entre cuentas</li>
-                                    <li>Administración de préstamos</li>
-                                    <li>Control de usuarios por roles</li>
+                                    <li class="lang-element" 
+                                        data-es="Gestión de cuentas bancarias" 
+                                        data-en="Bank account management">
+                                        Gestión de cuentas bancarias
+                                    </li>
+                                    <li class="lang-element" 
+                                        data-es="Transferencias entre cuentas" 
+                                        data-en="Transfers between accounts">
+                                        Transferencias entre cuentas
+                                    </li>
+                                    <li class="lang-element" 
+                                        data-es="Administración de préstamos" 
+                                        data-en="Loan administration">
+                                        Administración de préstamos
+                                    </li>
+                                    <li class="lang-element" 
+                                        data-es="Control de usuarios por roles" 
+                                        data-en="Role-based user control">
+                                        Control de usuarios por roles
+                                    </li>
                                 </ul>
 
                                 <a href="https://github.com/jonatanguzman/Banking-system-" 
                                 class="btn btn-dark btn-sm mt-2 no-hover" target="_blank">
-                                    <i class="bi bi-github me-1"></i>Ver en GitHub
+                                    <i class="bi bi-github me-1"></i>
+                                    <span class="lang-element"
+                                    data-es="Ver en GitHub"
+                                    data-en="View on Github">                                        
+                                    Ver en GitHub</span>
                                 </a>
 
                             </div>
@@ -303,44 +350,60 @@
 
                 <div class="card project-card mb-5 border-0 shadow-sm">
                     <div class="row g-0 align-items-center">
-
                         <div class="col-md-6 order-md-1">
                             <div class="card-body">
-
                                 <h4 class="fw-bold mb-2">
-                                    <i class="bi bi-receipt me-2"></i>Gestión de Reclamos
+                                    <i class="bi bi-receipt me-2"></i><span class="lang-element"
+                                    data-es="Gestión de Reclamos"
+                                    data-en="Claims Management"                                    >
+                                    Gestión de Reclamos</span>
                                 </h4>
-
-                                <p class="text">
-                                    Aplicación web diseñada para la gestión integral de reclamos, permitiendo registrar incidencias, asignarlas a responsables y realizar un seguimiento detallado de su estado hasta la resolución.
+                                <p class="text lang-element"
+                                    data-es="Aplicación web diseñada para la gestión integral de reclamos, permitiendo registrar incidencias, asignarlas a responsables y realizar un seguimiento detallado de su estado hasta la resolución."
+                                    data-en="Web application designed for the comprehensive management of claims, allowing you to register incidents, assign them to responsible parties and perform detailed tracking of their status until resolution.">
+                                   Aplicación web diseñada para la gestión integral de reclamos, permitiendo registrar incidencias, asignarlas a responsables y realizar un seguimiento detallado de su estado hasta la resolución.
                                 </p>
-
                                 <div class="mb-3">
                                     <span class="badge bg-primary">Java</span>
                                     <span class="badge bg-primary">JSP</span>
                                     <span class="badge bg-primary">MySQL</span>
                                     <span class="badge bg-primary">MVC</span>
                                 </div>
-
                                 <ul class="small text">
-                                    <li>Registro y seguimiento de reclamos</li>
-                                    <li>Asignación a operadores</li>
-                                    <li>Gestión por roles (admin, supervisor, operador)</li>
-                                    <li>Estados y trazabilidad</li>
+                                    <li class="lang-element" 
+                                        data-es="Registro y seguimiento de reclamos" 
+                                        data-en="Registration and tracking of claims">
+                                        Registro y seguimiento de reclamos
+                                    </li>
+                                    <li class="lang-element" 
+                                        data-es="Asignación a operadores"
+                                        data-en="Assignment to operators">
+                                        Asignación a operadores
+                                    </li>
+                                    <li class="=lang-element"
+                                        data-es="Gestión por roles (admin, supervisor, operador)"
+                                        data-en="Role-based management (admin, supervisor, operator)">
+                                        Gestión por roles (admin, supervisor, operador)
+                                    </li>
+                                    <li class="lang-element"
+                                        data-es="Estados y trazabilidad"
+                                        data-en="States and traceability">
+                                        Estados y trazabilidad
+                                    </li>
                                 </ul>
-
                                 <a href="https://github.com/jonatanguzman/Claim-management" 
                                 class="btn btn-dark btn-sm mt-2 no-hover" target="_blank">
-                                    <i class="bi bi-github me-1"></i>Ver en GitHub
+                                    <i class="bi bi-github me-1"></i><span class="lang-element"
+                                    data-es="Ver en GitHub"
+                                    data-en="View on Github">                                        
+                                    Ver en GitHub</span>
                                 </a>
-
                             </div>
                         </div>
 
                         <div class="col-md-6 order-md-2">
                             <div id="carouselProyecto2" class="carousel slide h-100" data-bs-ride="carousel">
                                 <div class="carousel-inner h-100">
-
                                     <div class="carousel-item active">
                                         <img src="img/p2-inicio.png" class="d-block w-100 project-img open-gallery" data-gallery="proyecto2">
                                     </div>
@@ -353,9 +416,7 @@
                                     <div class="carousel-item">
                                         <img src="img/p2-oper.png" class="d-block w-100 project-img open-gallery" data-gallery="proyecto2">
                                     </div>
-
                                 </div>
-
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon"></span>
                                 </button>
@@ -364,17 +425,14 @@
                                 </button>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <div class="card project-card mb-5 border-0 shadow-sm">
                     <div class="row g-0 align-items-center">
-
                         <div class="col-md-6">
                             <div id="carouselProyecto3" class="carousel slide h-100" data-bs-ride="carousel">
                                 <div class="carousel-inner h-100">
-
                                     <div class="carousel-item active">
                                         <img src="img/p3-Inicio.png" class="d-block w-100 project-img open-gallery" data-gallery="proyecto3">
                                     </div>
@@ -387,9 +445,7 @@
                                     <div class="carousel-item">
                                         <img src="img/p3-ventas.png" class="d-block w-100 project-img open-gallery" data-gallery="proyecto3">
                                     </div>
-
                                 </div>
-
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon"></span>
                                 </button>
@@ -401,31 +457,52 @@
 
                         <div class="col-md-6">
                             <div class="card-body">
-
                                 <h4 class="fw-bold mb-2">
-                                    <i class="bi bi-car-front-fill me-2"></i>Concesionaria
+                                    <i class="bi bi-car-front-fill me-2"></i><span class="lang-element"
+                                    data-es="Concesionaria"
+                                    data-en="Dealership">
+                                    Concesionaria</span>
                                 </h4>
-
-                                <p class="text-">
+                                <p class="text lang-element"
+                                    data-es="Aplicación de escritorio desarrollada para la gestión integral de concesionarias, incluyendo administración de vehículos, clientes, ventas e informes."
+                                    data-en="Desktop application developed for the comprehensive management of dealerships, including vehicle management, customers, sales and reports.">
                                     Aplicación de escritorio desarrollada para la gestión integral de concesionarias, incluyendo administración de vehículos, clientes, ventas e informes.
                                 </p>
-
                                 <div class="mb-3">
                                     <span class="badge bg-primary">C#</span>
                                     <span class="badge bg-primary">.NET</span>
                                     <span class="badge bg-primary">SQL Server</span>
                                 </div>
-
                                 <ul class="small text">
-                                    <li>Gestión de stock de vehículos</li>
-                                    <li>Administración de clientes</li>
-                                    <li>Registro de ventas</li>
-                                    <li>Generación de reportes</li>
+                                    <li class="lang-element"
+                                        data-es="Gestión de stock de vehículos"
+                                        data-en="Vehicle stock management">
+                                        Gestión de stock de vehículos
+                                    </li>
+                                    <li class="lang-element"
+                                        data-es="Administración de clientes"
+                                        data-en="Customer administration">
+                                        Administración de clientes
+                                    </li>
+                                    <li class="lang-element"
+                                        data-es="Registro de ventas"
+                                        data-en="Sales record">
+                                        Registro de ventas
+                                    </li>
+                                    <li class="lang-element"
+                                        data-es="Generación de reportes"
+                                        data-en="Report generation">
+                                        Generación de reportes                                        
+                                    </li>
                                 </ul>
 
                                 <a href="https://github.com/jonatanguzman/Concessionaire-management" 
                                 class="btn btn-dark btn-sm mt-2 no-hover" target="_blank">
-                                    <i class="bi bi-github me-1"></i>Ver en GitHub
+                                    <i class="bi bi-github me-1"></i>
+                                    <span class="lang-element"
+                                    data-es="Ver en GitHub"
+                                    data-en="View on Github">                                        
+                                    Ver en GitHub</span>
                                 </a>
 
                             </div>
@@ -460,57 +537,98 @@
     <section id="contacto" class="py-5">
         <div class="container">
             <div class="card custom-card border-0 shadow-sm p-4">
-            <h2 class="text-center text-primary fw-bold"><i class="bi bi-chat-square-text-fill me-2"></i>Contacto</h2>
+            <h2 class="text-center text-primary fw-bold"><i class="bi bi-chat-square-text-fill me-2"></i><span class="lang-element"
+                data-es="Contacto"
+                data-en="Contact">
+                Contacto</span>
+            </h2>
             <div class="row">
                 <div class="col-md-8 mb-4">
-                <h5 class="text-primary fw-bold mb-3"><i class="bi bi-envelope-paper-fill me-2"></i>Envíame un mensaje...</h5>
+                <h5 class="text-primary fw-bold mb-3"><i class="bi bi-envelope-paper-fill me-2"></i><span class="lang-element"
+                    data-es="Envíame un mensaje..."
+                    data-en="send me a message">
+                    Envíame un mensaje...
+                </span></h5>
                 <form id="contactForm" action="https://formspree.io/f/mblkvonv" method="POST" class="needs-validation" novalidate>
                     <div class="row mb-3">
                         <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
-                            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                            <input type="text" class="form-control lang-element" id="nombre" name="nombre" placeholder="Nombre" 
+                                data-es-placeholder="Nombre" data-en-placeholder="First Name" required>                            
+                            <div class="invalid-feedback lang-element" 
+                                data-es="Por favor ingresa tu nombre." 
+                                data-en="Please enter your name.">
+                                Por favor ingresa tu nombre.
+                            </div>
                         </div>
                         </div>
                         <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
-                            <div class="invalid-feedback">Por favor ingresa tu apellido.</div>
+                            <input type="text" class="form-control lang-element" id="apellido" name="apellido" placeholder="Apellido"
+                                data-es-placeholder="Apellido" data-en-placeholder="Last name" required>
+                            <div class="invalid-feedback lang-element"
+                                data-es="Por favor ingresa tu apellido."
+                                data-en="Plase enter your last name">
+                                Por favor ingresa tu apellido.
+                            </div>
                         </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Correo electrónico</label>
+                        <label for="email" class="form-label lang-element"
+                            data-es="Correo electrónico" data-en="Email">Correo electrónico</label>
                         <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-envelope-at-fill"></i></span>
-                        <input type="email" class="form-control" id="email" name="_replyto" placeholder="ejemplo@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                            <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+                        <input type="email" class="form-control lang-element" id="email" name="_replyto" placeholder="ejemplo@gmail.com"
+                            data-es-placeholder="ejemplo@gmail.com" data-en-placeholder="example@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <div class="invalid-feedback lang-element"
+                                data-es="Por favor ingresa un correo válido."
+                                data-en="Plase enter a valid email address">
+                                Por favor ingresa un correo válido.
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="asunto" class="form-label">Asunto</label>
+                        <label for="asunto" class="form-label lang-element"
+                        data-es="Asunto" data-en="Affair">Asunto</label>
                         <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-chat-square-quote-fill"></i></span>
-                        <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
-                        <div class="invalid-feedback">Por favor indica el asunto.</div>
+                        <input type="text" class="form-control lang-element" id="asunto" name="asunto" placeholder="Motivo de tu mensaje"
+                        data-es-placeholder="Motivo de tu mensaje" data-en-placeholder="Reason for your message" required>
+                            <div class="invalid-feedback lang-element"
+                                data-es="Por favor indica el asunto."
+                                data-en="Please indicate the subject.">
+                                Por favor indica el asunto.
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <label for="mensaje" class="form-label lang-element"
+                            data-es="Mensaje" data-en="Message">Mensaje</label>
                         <div class="input-group">
-                        <span class="input-group-text"><i class="bi bi-file-text-fill"></i></span>
-                        <textarea class="form-control" id="mensaje" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                        <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+                            <span class="input-group-text"><i class="bi bi-file-text-fill"></i></span>
+                            <textarea class="form-control lang-element" id="mensaje" name="message" rows="4" 
+                                    placeholder="Escribe tu mensaje aquí..." 
+                                    data-es-placeholder="Escribe tu mensaje aquí..." 
+                                    data-en-placeholder="Write your message here..." required></textarea>                            
+                            <div class="invalid-feedback lang-element" 
+                                data-es="El mensaje no puede estar vacío." 
+                                data-en="Message cannot be empty.">
+                                El mensaje no puede estar vacío.
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between w-100">
                         <button type="submit" class="btn btn-outline-primary flex-grow-1 me-2">
-                            <i class="bi bi-envelope-fill me-2"></i>Enviar
+                            <i class="bi bi-envelope-fill me-2"></i><span class="lang-element"
+                                data-es="Enviar" data-en="Send">Enviar
+                            </span>
                         </button>
                         <button type="reset" class="btn btn-outline-secondary flex-grow-1 ms-2">
-                            <i class="bi bi-envelope-x-fill me-2"></i>Limpiar
+                            <i class="bi bi-envelope-x-fill me-2"></i><span class="lang-element"
+                            data-es="Limpiar" data-en="Clean"></span>
                         </button>                
                     </div>
                 </form>
@@ -518,21 +636,24 @@
                 </div>
 
                 <div class="col-md-4">
-                <h5 class="text-primary fw-bold mb-3"><i class="bi bi-telephone-forward-fill me-2"></i>Contáctame directo...</h5>
+                <h5 class="text-primary fw-bold mb-3"><i class="bi bi-telephone-forward-fill me-2"></i><span  class="lang-element"
+                    data-es="Contáctame directo..." data-en="Contact me directly...">Contáctame directo...</span></h5>
                 <div class="d-flex flex-column gap-3">
                     <a href="mailto:jonatanguzman2712@gmail.com" class="btn btn-outline-primary rounded-pill no-hover">
-                    <i class="bi bi-envelope-fill me-2"></i>Email
+                    <i class="bi bi-envelope-fill me-2"></i><span class="lang-element"
+                        data-es="Correo electrónico" data-en="Email">Correo electrónico</span>
                     </a>
                     <a href="https://wa.me/5491127257959" target="_blank" class="btn btn-outline-success rounded-pill no-hover">
-                    <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                        <i class="bi bi-whatsapp me-2"></i>WhatsApp
                     </a>
                     <a href="tel:+541127257959" class="btn btn-outline-dark rounded-pill no-hover">
-                    <i class="bi bi-telephone-fill me-2"></i>Llamar
+                    <i class="bi bi-telephone-fill me-2"></i><span class="lang-element"
+                        data-es="Llamar" data-en="Call">Llamar</span>
                     </a>
                 </div>
 
                 <div class="text-center mt-5">
-                    <p class="fw-bold">o scanéa el QR y hablame por WhatsApp</p>
+                    <p class="fw-bold lang-element" data-es="o escanéa el QR y hablame por whatssap" data-en="Or scan the QR code and message me on WhatsApp.">scanéa el QR y hablame por WhatsApp</p>
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://wa.me/5491127257959" 
                         alt="QR WhatsApp" class="shadow-sm rounded">
                 </div>
@@ -551,7 +672,12 @@
             <i class="bi bi-linkedin"></i>
             <a class="text-body" href="https://www.linkedin.com/in/jonatan-guzman-703509317/" target="_blank">
                 Guzmán Jonatan Rodrigo
-            </a>. Todos los derechos reservados.
+            </a>. 
+            <span class="lang-element" 
+                data-es="Todos los derechos reservados." 
+                data-en="All rights reserved.">
+                Todos los derechos reservados.
+            </span>
         </div>
     </footer>
 
@@ -568,6 +694,29 @@
         once: false,          
         offset: 120         
     });
+    </script>
+    <script>
+    function changeLanguage(lang) {
+        const elements = document.querySelectorAll('.lang-element');
+        
+        elements.forEach(el => {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                const newPlaceholder = el.getAttribute(`data-${lang}-placeholder`);
+                if (newPlaceholder) {
+                    el.placeholder = newPlaceholder;
+                }
+            } 
+            else {
+                const newContent = el.getAttribute(`data-${lang}`);
+                if (newContent) {
+                    el.innerHTML = newContent;
+                }
+            }
+        });
+
+        document.getElementById('current-lang-label').textContent = lang.toUpperCase();
+        localStorage.setItem('selectedLanguage', lang);
+    }
     </script>
 </body>
 </html>
