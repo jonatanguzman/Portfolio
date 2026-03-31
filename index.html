@@ -58,10 +58,30 @@
     </nav>
 
     <div class="quick-menu">
-        <a class="quick-icon" href="#sobreMi" title="Sobre mí"><i class="bi bi-person-lines-fill"></i></a>
-        <a class="quick-icon" href="#conocimientos" title="Conocimientos"><i class="bi bi-mortarboard-fill"></i></a>
-        <a class="quick-icon" href="#proyectos" title="Proyectos"><i class="bi bi-archive-fill"></i></a>
-        <a class="quick-icon" href="#contacto" title="Contacto"><i class="bi bi-chat-square-text-fill"></i></a>
+        <a class="quick-icon lang-element" href="#sobreMi" 
+        title="Sobre mí" 
+        data-es-title="Sobre mí" 
+        data-en-title="About Me">
+        <i class="bi bi-person-lines-fill"></i>
+        </a>
+        <a class="quick-icon lang-element" href="#conocimientos" 
+        title="Conocimientos" 
+        data-es-title="Knowledge" 
+        data-en-title="Skills">
+        <i class="bi bi-mortarboard-fill"></i>
+        </a>
+        <a class="quick-icon lang-element" href="#proyectos" 
+        title="Proyectos" 
+        data-es-title="Proyectos" 
+        data-en-title="Projects">
+        <i class="bi bi-archive-fill"></i>
+        </a>
+        <a class="quick-icon lang-element" href="#contacto" 
+        title="Contacto" 
+        data-es-title="Contacto" 
+        data-en-title="Contact">
+        <i class="bi bi-chat-square-text-fill"></i>
+        </a>
     </div>
     
     <div data-aos="zoom-in">
@@ -129,7 +149,7 @@
             <div class="container">
                 <div class="card border-0 shadow-sm p-4">
                     <h2 class="text-center text-primary fw-bold mb-4">
-                        <i class="bi bi-mortarboard-fill me-2"></i><span class="lang-element" data-es="Conocimientos" data-en="Knowledge">Conocimientos</span>
+                        <i class="bi bi-mortarboard-fill me-2"></i><span class="lang-element" data-es="Conocimientos" data-en="Skills">Conocimientos</span>
                     </h2>
                     <p class="text-center mx-auto mb-4 lang-element" style="max-width: 800px;"
                         data-es="Perfil orientado al desarrollo de soluciones que integran análisis de datos y desarrollo de software,
@@ -667,7 +687,7 @@
 
     <footer class="footer-floating bg-light text-center shadow-sm rounded-3">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © <span id="year"></span> 
+            © 2025 - <span id="year"></span> 
             <i class="bi bi-linkedin"></i>
             <a class="text" href="https://www.linkedin.com/in/jonatan-guzman-703509317/" target="_blank">
                 Guzmán Jonatan Rodrigo
@@ -701,19 +721,20 @@
         elements.forEach(el => {
             if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
                 const newPlaceholder = el.getAttribute(`data-${lang}-placeholder`);
-                if (newPlaceholder) {
-                    el.placeholder = newPlaceholder;
-                }
+                if (newPlaceholder) el.placeholder = newPlaceholder;
             } 
+            else if (el.hasAttribute(`data-${lang}-title`)) {
+                const newTitle = el.getAttribute(`data-${lang}-title`);
+                if (newTitle) el.title = newTitle;
+            }
             else {
                 const newContent = el.getAttribute(`data-${lang}`);
-                if (newContent) {
-                    el.innerHTML = newContent;
-                }
+                if (newContent) el.innerHTML = newContent;
             }
         });
 
-        document.getElementById('current-lang-label').textContent = lang.toUpperCase();
+        const label = document.getElementById('current-lang-label');
+        if (label) label.textContent = lang.toUpperCase();
         localStorage.setItem('selectedLanguage', lang);
     }
     </script>
