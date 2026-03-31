@@ -176,3 +176,16 @@ a:hover {
   color: inherit !important;
 }
 
+.dark-mode .dropdown-menu {
+    background-color: #2b3035; 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dark-mode .dropdown-item {
+    color: #e9ecef;
+}
+
+.dark-mode .dropdown-item:hover {
+    background-color: #3d4246; 
+    color: #ffffff;
+}
