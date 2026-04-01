@@ -96,11 +96,13 @@ a:hover {
 }
 
 .section-divider {
-  height: 4px;
-  width: 80%;
-  margin: 2rem auto;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  height: 2px; 
+  width: 60%;  
+  margin: 4rem auto; 
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  box-shadow: 0 0 15px rgba(63, 187, 255, 0.5); 
+  border: none;
+  opacity: 0.6;
 }
 
 .tech-card {
