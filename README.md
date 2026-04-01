@@ -1,32 +1,91 @@
-🌐 Portfolio Personal
+# 💼 Portfolio Personal - Jonatan Guzmán
 
-Este es mi portfolio web desarrollado con HTML, CSS, JavaScript y Bootstrap, diseñado para mostrar mi perfil profesional como desarrollador.
+Bienvenido a mi portfolio personal, donde presento mis proyectos, habilidades y experiencia como desarrollador orientado a backend y análisis de datos.
 
-📌 Características
+🔗 **Ver portfolio online:**
+👉 https://jonatanguzman.vercel.app/
 
-Diseño responsivo adaptable a distintos dispositivos.
+---
 
-Modo claro/oscuro con switch dinámico.
+## 🚀 Sobre el proyecto
 
-Secciones:
+Este portfolio fue desarrollado con el objetivo de mostrar de forma clara y profesional mis conocimientos en desarrollo de software y análisis de datos.
 
-Sobre mí 👨‍💻
+Incluye:
 
-Conocimientos 🛠️ (con carrusel de tecnologías)
+* Presentación personal
+* Tecnologías y herramientas
+* Proyectos desarrollados
+* Información de contacto
 
-Proyectos 🚀
+---
 
-Contacto 📬 (formulario + QR de WhatsApp)
+## 🛠️ Tecnologías utilizadas
 
-Descarga de CV 📄
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap
+* .NET / C#
+* Java
+* SQL Server / MySQL
+* Power BI
+* SAP
 
-Animaciones en scroll con AOS (Animate On Scroll Library).
+---
 
-🛠️ Tecnologías utilizadas
+## ✨ Funcionalidades destacadas
 
-HTML5
+* 🌙 **Modo oscuro / claro**
+* 🌍 **Selector de idioma (Español / Inglés)**
+* 📱 **Diseño responsive**
+* 🎯 **Navegación rápida con menú lateral (Quick Menu)**
+* 🖼️ **Galería de imágenes en proyectos**
+* 🎨 **UI moderna con cards y efectos visuales**
+* ⚡ **Animaciones suaves (AOS)**
 
-CSS3
+---
+
+## 📂 Secciones del portfolio
+
+* 🧑‍💻 Sobre mí
+* 📊 Conocimientos
+* 📁 Proyectos
+* 📬 Contacto
+
+---
+
+## 📌 Proyectos destacados
+
+### 🏦 Sistema de Gestión Bancaria
+
+Aplicación web que permite gestionar cuentas, clientes, transferencias y préstamos.
+
+### 🧾 Gestión de Reclamos
+
+Sistema para administrar reclamos de clientes, asignarlos y realizar seguimiento.
+
+### 🚗 Sistema de Concesionaria
+
+Aplicación para la gestión de vehículos, ventas, clientes e informes.
+
+---
+
+## 📈 Objetivo
+
+Mi objetivo es seguir creciendo como desarrollador, fortaleciendo mis conocimientos en backend y análisis de datos, y participando en proyectos que aporten valor real.
+
+---
+
+## 📬 Contacto
+
+* 💼 LinkedIn: https://www.linkedin.com/in/jonatan-guzman-703509317/
+* 💻 GitHub: https://github.com/jonatanguzman
+
+---
+
+⭐ Si te gustó el proyecto, podés darle una estrella al repositorio.
+
 
 Bootstrap 5
 
